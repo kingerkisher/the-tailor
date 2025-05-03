@@ -1,0 +1,399 @@
+/* General Styles */
+html,
+body {
+    overflow-y: auto;
+    /* Allows vertical scrolling */
+    overflow-x: hidden;
+    /* Hides horizontal scrolling */
+    height: 100vh;
+    /* Ensures full-page content displays properly */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+    scrollbar-width: none;
+}
+
+/* Hide scrollbar for Edge */
+body {
+    -ms-overflow-style: none;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-brand img {
+    height: 70px;
+    width: auto;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f8c471;
+    /* Highlight active link */
+}
+
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Semi-transparent effect */
+}
+
+/* Hero Section */
+.explor {
+    background-color: #f8c471;
+    /* Light yellow background for the hero section */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.explor:hover {
+    background-color: #f39c12;
+    /* Darker yellow on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    /* Smooth transition */
+}
+
+.landing {
+    margin-top: 80px;
+}
+
+.hero-section {
+    background-image: url("/image/yash-bhatia-pZdd7vIroSw-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Text with Blur Background */
+.hero-text {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.custom-dresses {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.dress-card {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.dress-card img {
+    /* padding: 10px; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dress-card:hover img {
+    transform: scale(1.05);
+}
+
+.dress-info {
+    padding: 12px;
+}
+
+.dress-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* services start */
+
+.services {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.service-card {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+    font-size: 20px;
+    color: #f8c471;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* services end */
+
+/* gallery*/
+.gallery {
+    margin-top: 80px;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.category-filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background-color: #f8c471;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter-btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+.gallery-item {
+    display: block;
+    /* Ensures visibility by default */
+}
+
+/*  gallery*/
+
+
+.site-footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    border: 1px solid #f8c471;
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.site-footer p {
+    font-size: 1rem;
+}
+
+.social-icon {
+    color: #f8c471;
+    font-size: 24px;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    /* Ensures images take full width of their container */
+    height: 300px;
+    /* Fixed height for consistency */
+    object-fit: cover;
+    /* Prevents distortion and maintains proportions */
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsive Fix for Smaller Screens */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* border: 1px solid #ccc; */
+    text-align: center;
+}
+
+.gallery-grid a{
+    text-decoration: none;
+    color: inherit;
+    /* Inherit color from parent */
+}
+
+/* Four items per row on large screens */
+.gallery-item {
+    width: 23%;
+    /* Ensures four items fit per row with space */
+    margin-bottom: 20px;
+}
+
+.cloth-details {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+}
+
+.cloth-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: #f8c471;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #222;
+    color: white;
+}
+
+
+
+
+/* Center text */
+.text-center {
+    text-align: center;
+}
+
+.contact-us {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    color: #f8c471;
+    margin-right: 10px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #f8c471;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #222;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-text {
+        width: 80%;
+        /* Expands width for smaller screens */
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .dress-card img {
+        height: 250px;
+    }
+
+    .contact-us {
+        margin-top: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .gallery-item {
+        width: 48%;
+        /* Each item takes half the width */
+        margin-bottom: 10px;
+    }
+
+    .gallery-item img {
+        height: 200px;
+        /* Adjust image height for mobile */
+    }
+}
