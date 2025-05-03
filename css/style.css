@@ -74,7 +74,7 @@ body {
 }
 
 .hero-section {
-    background-image: url("/image/yash-bhatia-pZdd7vIroSw-unsplash.jpg");
+    background-image: URL("./image/yash-bhatia-pZdd7vIroSw-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
